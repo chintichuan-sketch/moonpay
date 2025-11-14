@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonPay Customer Support</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VCBLXTQNVQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VCBLXTQNVQ');
+    </script>
+    
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .toll-free {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .phone-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #4cc9f0;
+        }
+        
+        /* Sticky Call Bar */
+        .sticky-call-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #4cc9f0 0%, #3aa8cc 100%);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        
+        .sticky-call-bar.hidden {
+            transform: translateY(100%);
+        }
+        
+        .call-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .call-text {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .call-button {
+            background-color: white;
+            color: #4cc9f0;
+            padding: 10px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .call-button i {
+            margin-right: 8px;
+        }
+        
+        .call-button:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(22, 33, 62, 0.85), rgba(22, 33, 62, 0.9)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%231a1a2e"/><circle cx="50" cy="50" r="30" fill="%234cc9f0" opacity="0.1"/></svg>');
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #4cc9f0;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #3aa8cc;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Support Options */
+        .support-options {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 32px;
+            color: #16213e;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .option-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .option-icon {
+            font-size: 40px;
+            color: #4cc9f0;
+            margin-bottom: 20px;
+        }
+        
+        .option-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #16213e;
+        }
+        
+        .option-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .option-link {
+            color: #4cc9f0;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .option-link i {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .option-link:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Call Now Section */
+        .call-now-section {
+            background: linear-gradient(135deg, #4cc9f0 0%, #3aa8cc 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .call-now-content h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        
+        .call-now-content p {
+            font-size: 18px;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .large-call-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: white;
+            color: #4cc9f0;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 22px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .large-call-button i {
+            margin-right: 10px;
+            font-size: 24px;
+        }
+        
+        .large-call-button:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background-color: #f0f5ff;
+            padding: 80px 0;
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: #16213e;
+        }
+        
+        .faq-question:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 20px 20px;
+            max-height: 500px;
+        }
+        
+        .faq-toggle {
+            color: #4cc9f0;
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .contact-info h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .contact-details {
+            margin-top: 20px;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-detail i {
+            font-size: 20px;
+            color: #4cc9f0;
+            margin-right: 15px;
+            width: 30px;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-control:focus {
+            border-color: #4cc9f0;
+            outline: none;
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: #4cc9f0;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background-color: #3aa8cc;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0f1419;
+            color: #aaa;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: #4cc9f0;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo {
+                margin-bottom: 15px;
+            }
+            
+            .hero h2 {
+                font-size: 28px;
+            }
+            
+            .hero p {
+                font-size: 16px;
+            }
+            
+            .section-title h2 {
+                font-size: 26px;
+            }
+            
+            .contact-info h2 {
+                font-size: 26px;
+            }
+            
+            .call-bar-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+            
+            .large-call-button {
+                font-size: 18px;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="20" fill="#4CC9F0"/>
+                        <path d="M12 20C12 15.5817 15.5817 12 20 12C24.4183 12 28 15.5817 28 20C28 24.4183 24.4183 28 20 28C15.5817 28 12 24.4183 12 20Z" fill="white"/>
+                        <path d="M20 16C17.7909 16 16 17.7909 16 20C16 22.2091 17.7909 24 20 24C22.2091 24 24 22.2091 24 20C24 17.7909 22.2091 16 20 16Z" fill="#4CC9F0"/>
+                    </svg>
+                    <h1>MoonPay Support</h1>
+                </div>
+                <div class="contact-info">
+                    <div class="toll-free">24/7 Toll-Free Support</div>
+                    <div class="phone-number">+1-828-407-9844</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>MoonPay Customer Support</h2>
+            <p>We're here to help with any questions about buying, selling, or using cryptocurrencies with MoonPay. Our dedicated support team is available 24/7 to assist you.</p>
+            <a href="tel:+1-828-407-9844" class="cta-button">
+                <i class="fas fa-phone-alt"></i> Call Now: +1-828-407-9844
+            </a>
+        </div>
+    </section>
+
+    <!-- Support Options -->
+    <section class="support-options">
+        <div class="container">
+            <div class="section-title">
+                <h2>How Can We Help You?</h2>
+                <p>Choose the support option that works best for your needs</p>
+            </div>
+            <div class="options-grid">
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Phone Support</h3>
+                    <p>Speak directly with our support specialists for immediate assistance with your MoonPay account or transactions.</p>
+                    <a href="tel:+1-828-407-9844" class="option-link">
+                        Call Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>Send us a detailed message and we'll get back to you with a comprehensive solution to your issue.</p>
+                    <a href="mailto:support@moonpay.com" class="option-link">
+                        Email Us <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="option-card">
+                    <div class="option-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <p>Chat with our support team in real-time for quick answers to your questions about MoonPay services.</p>
+                    <a href="#" class="option-link" id="start-chat">
+                        Start Chat <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call Now Section -->
+    <section class="call-now-section">
+        <div class="container">
+            <div class="call-now-content">
+                <h2>Need Immediate Assistance?</h2>
+                <p>Our cryptocurrency experts are standing by to help you with any issues related to your MoonPay account, transactions, or crypto purchases.</p>
+                <a href="tel:+1-828-407-9844" class="large-call-button">
+                    <i class="fas fa-phone-alt"></i> Call +1-828-407-9844
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions about MoonPay</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I buy cryptocurrency with MoonPay?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To buy cryptocurrency with MoonPay, simply create an account, verify your identity, select the cryptocurrency you want to purchase, enter the amount, choose your payment method, and complete the transaction. Our platform supports various payment methods including credit/debit cards and bank transfers.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is the transaction limit on MoonPay?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Transaction limits vary based on your verification level and local regulations. Generally, unverified users have lower limits, while fully verified users can transact higher amounts. You can check your specific limits in the MoonPay app or website under your account settings.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does a transaction typically take?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Most transactions are processed within minutes, but can sometimes take up to a few hours depending on network congestion and payment method. Bank transfers may take 1-3 business days. You can track your transaction status in real-time through your MoonPay dashboard.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What should I do if my transaction fails?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If your transaction fails, first check your payment method to ensure it has sufficient funds. If the issue persists, contact our support team at +1-828-407-9844 or via email with your transaction ID for immediate assistance. We'll help identify the issue and guide you through the resolution process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is MoonPay available in my country?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>MoonPay is available in many countries worldwide. To check if our services are available in your specific location, visit our website or app and attempt to create an account. If MoonPay isn't available in your country yet, we're continuously expanding our services to new regions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Our customer support team is available 24/7 to assist with any questions or issues you may have regarding MoonPay services.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <div class="toll-free">Toll-Free Number</div>
+                                <div class="phone-number">+1-828-407-9844</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <div>Email Address</div>
+                                <div>support@moonpay.com</div>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <div>Support Hours</div>
+                                <div>24/7, 365 days a year</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="support-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Call Bar -->
+    <div class="sticky-call-bar" id="stickyCallBar">
+        <div class="container">
+            <div class="call-bar-content">
+                <div class="call-text">
+                    <i class="fas fa-phone-alt"></i> Need help? Call our support team now!
+                </div>
+                <a href="tel:+1-828-407-9844" class="call-button">
+                    <i class="fas fa-phone-alt"></i> Call +1-828-407-9844
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>MoonPay</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Buy Crypto</a></li>
+                        <li><a href="#">Sell Crypto</a></li>
+                        <li><a href="#">MoonPay SDK</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Transaction Status</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Compliance</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 MoonPay. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+
+        // Form Submission
+        document.getElementById('support-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Track form submission in Google Analytics
+            gtag('event', 'form_submission', {
+                'event_category': 'Contact',
+                'event_label': 'Support Form'
+            });
+            
+            alert('Thank you for your message! Our support team will get back to you soon.');
+            this.reset();
+        });
+
+        // Live Chat Simulation
+        document.getElementById('start-chat').addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Track chat initiation in Google Analytics
+            gtag('event', 'chat_initiation', {
+                'event_category': 'Engagement',
+                'event_label': 'Live Chat'
+            });
+            
+            alert('Our live chat service will open in a new window. For now, please call our support line at +1-828-407-9844 for immediate assistance.');
+        });
+
+        // Sticky Call Bar Behavior
+        const stickyCallBar = document.getElementById('stickyCallBar');
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop && scrollTop > 300) {
+                // Scrolling down - hide the call bar
+                stickyCallBar.classList.add('hidden');
+            } else {
+                // Scrolling up - show the call bar
+                stickyCallBar.classList.remove('hidden');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Track phone number clicks for analytics
+        document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // Track phone calls in Google Analytics
+                gtag('event', 'phone_call', {
+                    'event_category': 'Conversion',
+                    'event_label': 'Phone Number Click'
+                });
+                
+                console.log('Phone number clicked: ' + this.getAttribute('href'));
+            });
+        });
+
+        // Track page views for specific sections
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    gtag('event', 'section_view', {
+                        'event_category': 'Engagement',
+                        'event_label': entry.target.className
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe main sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VCBLXTQNVQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VCBLXTQNVQ');
+</script>
+</body>
+</html>
